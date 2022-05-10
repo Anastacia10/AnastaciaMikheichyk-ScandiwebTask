@@ -1,0 +1,73 @@
+.attribute input{
+    display: none;
+}
+
+.attribute label{
+    box-sizing: border-box;
+    display: block;
+    width: 63px;
+    height: 45px;
+    border: 1px solid #1D1F22;
+    margin-right: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    background-color: #FFFFFF;
+    transition: all 0.5s;
+    color:#1D1F22;
+    padding: 12px 5px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.attribute input:checked + label{
+    background: #1D1F22;
+    color: white;
+}
+
+.color label{
+    padding: 0px;
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    border: none;
+}
+
+.color input:checked + label{
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+.color input:checked + label::before{
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #5ECE7B;
+    z-index: 2;
+}
+
+.colorWhite label{
+    border: 1px solid #1D1F22;
+}
+
+
+.colorWhite input:checked + label{
+   border: none;
+}
+
+.colorWhite input:checked + label::before{
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #5ECE7B;
+    z-index: 2;
+}

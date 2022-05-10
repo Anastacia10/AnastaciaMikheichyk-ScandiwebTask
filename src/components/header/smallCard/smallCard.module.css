@@ -1,0 +1,97 @@
+.smallCard{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 42px;
+}
+
+.smallCard_leftBlock{
+    display: flex;
+    flex-direction: column;
+}
+
+.smallCard_name{
+    box-sizing: border-box;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 6px;
+}
+
+.smallCard_price{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 10px;  
+}
+
+.smallCard_price:last-child{
+    margin-bottom: 0px;  
+}
+
+.smallCard_attributeSet:not(:last-child){
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+
+}
+
+.smallCard_attributeSet p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1D1F22;
+    margin-bottom: 8px;
+}
+
+.smallCard_attributeSetItems{
+    display: flex;
+}
+
+.smallCard_rightBlock{
+    display: flex;
+}
+
+.smallCard_quantity{
+    display: flex;
+    width: 24px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.smallCard_quantity button{
+    box-sizing: border-box;
+    border:0;
+    width: 24px;
+    height: 24px;
+    overflow:hidden;
+    background-color: #FFFFFF;
+    transition: all 0.4s;
+}
+
+.smallCard_quantity button:hover{
+    background-color: rgba(166, 166, 166, 0.2);
+}
+
+.smallCard_quantity button:active{
+    transform: scale(0.95);
+}
+
+.smallCard_quantity p{
+    align-self: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 0px;
+}
+
+.smallCard_photo{
+    margin-left: 10px;
+    width: 121px;
+    flex-grow: 1;
+}
+
+
+

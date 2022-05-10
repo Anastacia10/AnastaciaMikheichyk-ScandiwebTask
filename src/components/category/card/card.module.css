@@ -1,0 +1,102 @@
+.card{
+    box-sizing: border-box;
+    position: relative;
+    width: 386px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    font-size: 18px;
+    line-height: 29px;
+    color:  #1D1F22;
+}
+
+.card a{
+    display: block;
+}
+
+.card:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+    transition: all 0.5s;
+}
+
+.card_photo{
+    width: 356px;
+    height: 328px;
+    margin-bottom: 24px;
+}
+
+.card_infoBlock{
+    align-self: flex-end;
+}
+
+.card_name{
+    font-weight: 300; 
+    width: 320px
+}
+
+.card_price{
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.card_button{
+    position: absolute;
+    display: none;
+    bottom: 72px;
+    right: 31px;
+    background-color: white;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    border: none;
+    text-align: center;
+}
+
+.card_button svg{
+    border-radius: 50%;
+    border: 1px solid #5ECE7B;
+}
+
+.card_button circle{
+    fill:#5ECE7B;
+    transition: all 0.5s;
+}
+
+.card_button path{
+    fill:white;
+    transition: all 0.5s;
+}
+
+.card_button:hover circle{
+    fill: white;
+    transition: all 0.5s;
+}
+
+.card_button:hover path{
+    fill: #5ECE7B;
+    transition: all 0.5s;
+}
+
+.card:not(.outOfStock):hover .card_button{
+    display: block;
+    transition: all 0.6s;
+}
+
+.outOfStock::after{
+    position: absolute;
+    text-align: center;
+    top: 151px;
+    left: 0px;
+    width: 386px;
+    content: 'OUT OF STOCK';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    color: #8d8f9a;
+}
+
+.outOfStock{
+    opacity: 0.5;
+}

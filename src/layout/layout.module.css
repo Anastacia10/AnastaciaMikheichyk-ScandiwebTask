@@ -1,0 +1,35 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.layout{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.layout a{
+    text-decoration: none;
+}
+
+.layout summary{
+    display: block;
+}
+
+.layout summary::-webkit-details-marker{
+    display: none;
+}
+
